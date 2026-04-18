@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "🍔🍕" },
+      { name: "description", content: "FoodRush is a modern landing page for a Pakistani food delivery app." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "🍔🍕" },
+      { property: "og:description", content: "FoodRush is a modern landing page for a Pakistani food delivery app." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "🍔🍕" },
+      { name: "twitter:description", content: "FoodRush is a modern landing page for a Pakistani food delivery app." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/486ee5ba-bc3d-46d0-94b3-add6bac64b61/id-preview-63d7c9e1--3c74d4c8-5da9-4a8b-8356-e60a2fee431e.lovable.app-1776510267830.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/486ee5ba-bc3d-46d0-94b3-add6bac64b61/id-preview-63d7c9e1--3c74d4c8-5da9-4a8b-8356-e60a2fee431e.lovable.app-1776510267830.png" },
     ],
     links: [
       {
