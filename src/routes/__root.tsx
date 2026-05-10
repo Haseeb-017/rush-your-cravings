@@ -63,6 +63,34 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <script
+          type="module"
+          dangerouslySetInnerHTML={{
+            __html: `
+              import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+              Chatbot.init({
+                chatflowid: "38832e73-b06e-48ec-902f-34895f3e4bc2",
+                apiHost: "https://cloud.flowiseai.com",
+                theme: {
+                  button: {
+                    backgroundColor: "#7C3AED",
+                    right: 20,
+                    bottom: 20,
+                    size: 48,
+                    iconColor: "white",
+                  },
+                  chatWindow: {
+                    title: "AI Assistant",
+                    welcomeMessage: "Hello! How can I help you today?",
+                    backgroundColor: "#ffffff",
+                    height: 500,
+                    width: 380,
+                  }
+                }
+              })
+            `,
+          }}
+        />
       </body>
     </html>
   );
